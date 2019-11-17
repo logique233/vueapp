@@ -1,5 +1,5 @@
 # vueapp
-
+![](https://github.com/logique233/vueapp/workflows/Node%20CI/badge.svg)
 ## Project setup
 ```
 npm install
