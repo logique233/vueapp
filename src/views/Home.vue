@@ -1,18 +1,29 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <el-container>
+      <el-main>
+      <Subnav></Subnav>
+      <Iview></Iview>
+      </el-main>
+    </el-container>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Subnav from "@/components/navbar/Subnav.vue";
+import Iview from "@/components/navbar/iview.vue";
 
 export default {
-  name: 'home',
+  name: "home",
   components: {
-    HelloWorld
+    Subnav,
+    Iview
   }
-}
+};
 </script>
+<style  scoped>
+.el-main{
+  overflow:inherit
+}
+</style>

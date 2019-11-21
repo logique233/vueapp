@@ -1,9 +1,8 @@
 <template>
   <div id="app">
-    <el-carousel indicator-position="outside">
-      <h1>h1</h1>
-      <el-carousel-item v-for="item in img_list" :key="item">
-        <img :src="item" alt />
+    <el-carousel >
+      <el-carousel-item v-for="item in img_list" :key="item" :style="item.colour" :title="item.colour">
+        <img :src="item.link" alt />
       </el-carousel-item>
     </el-carousel>
   </div>
@@ -13,10 +12,10 @@ export default {
   data() {
     return {
       img_list: [
-        "http://www.itheima.com/images/slidead/HOMEPAGE/20191112093108968x385.jpg",
-        "http://www.itheima.com/images/slidead/HOMEPAGE/20191111094228banner968x385.jpg",
-        "http://www.itheima.com/images/slidead/HOMEPAGE/2019092611235020190809153712renbao968x385.jpg",
-        "http://www.itheima.com/images/slidead/HOMEPAGE/20181009105646968-385.jpg"
+        {link: "http://www.itheima.com/images/slidead/HOMEPAGE/20191112093108968x385.jpg",colour: "background-color: #0E1144"},
+        {link: "http://www.itheima.com/images/slidead/HOMEPAGE/20191111094228banner968x385.jpg",colour: "background-color: #173BFF"},
+        {link: "http://www.itheima.com/images/slidead/HOMEPAGE/2019092611235020190809153712renbao968x385.jpg",colour: "background-color: #000247"},
+        {link: "http://www.itheima.com/images/slidead/HOMEPAGE/20181009105646968-385.jpg",colour: "background-color: #00101F"}
       ],
       // 图片父容器高度
       bannerHeight: 1000,
@@ -43,8 +42,11 @@ export default {
 };
 </script>
 <style scoped>
-#app {
+/* #app {
   background: #012553;
+} */
+.el-carousel{
+  /* position:inherit; */
 }
 img {
   height: inherit;
