@@ -22,7 +22,7 @@
               </li>
             </ul>
           </ul>
-          <div class="course_kind">
+          <div class="course_kind" style="display: none;">
             <ul class="icon_fu">
               <li class="icon_fuli" v-for="cate in category" :key="cate.index">
                 <ul class="box1">
