@@ -7,13 +7,13 @@
           <ul class="nav_txt">
             <!-- 左侧学科 -->
             <ul>
-              <li v-for="data in datas" :key="data">
+              <li v-for="(data) in datas" :key="data.index">
                 <a href="#" target="_blank" class="a_gd">
                   {{data.type}}
                   <i class="iconfont">
                     <span
                       v-for="(item,index) in data.lesson"
-                      :key="item"
+                      :key="index.index"
                       :class="[index!=0?'spant':'']"
                     >{{item}}</span>
                     <i class="iconfont icon-jiantou"></i>
@@ -24,17 +24,17 @@
           </ul>
           <div class="course_kind">
             <ul class="icon_fu">
-              <li class="icon_fuli" v-for="item in category" :key="item">
-                <ui class="box1">
-                  <li v-for="name in item.name" :key="name">
+              <li class="icon_fuli" v-for="cate in category" :key="cate.index">
+                <ul class="box1">
+                  <li v-for="name in cate.name" :key="name.index">
                     <a href="#">{{name}}&nbsp;&nbsp;&nbsp;|</a>
                   </li>
-                </ui>
-                <ui class="box2">
-                  <li v-for="lesson in item.lesson" :key="lesson">
+                </ul>
+                <ul class="box2">
+                  <li v-for="lesson in cate.lesson" :key="lesson.index">
                     <a href="#">{{lesson}}</a>
                   </li>
-                </ui>
+                </ul>
               </li>
             </ul>
           </div>
@@ -46,7 +46,7 @@
 <script>
 import $ from "jquery";
 export default {
-  name: "about",
+  name: "subnav",
   data() {
     return {
       datas: [

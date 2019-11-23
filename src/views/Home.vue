@@ -1,9 +1,12 @@
 <template>
   <div class="home">
     <el-container>
+      <el-header>
+        <!-- <Head></Head> -->
+      </el-header>
       <el-main>
-      <Subnav></Subnav>
-      <Iview></Iview>
+        <Subnav></Subnav>
+        <Iview></Iview>
       </el-main>
     </el-container>
   </div>
@@ -13,17 +16,19 @@
 // @ is an alias to /src
 import Subnav from "@/components/navbar/Subnav.vue";
 import Iview from "@/components/navbar/iview.vue";
+// import Head from "@/components/navbar/head.vue";
 
 export default {
   name: "home",
   components: {
     Subnav,
-    Iview
+    Iview,
+    // Head
   }
 };
 </script>
 <style  scoped>
-.el-main{
-  overflow:inherit
+.el-main {
+  overflow: inherit;
 }
 </style>
