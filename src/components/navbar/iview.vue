@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <el-carousel >
+    <el-carousel :height="height">
       <el-carousel-item v-for="(img) in img_list" :key="img.index" :style="img.colours" >
         <img :src="img.link" alt />
       </el-carousel-item>
@@ -11,6 +11,7 @@
 export default {
   data() {
     return {
+      height: "343px",
       img_list: [
         {link: "http://www.itheima.com/images/slidead/HOMEPAGE/20191112093108968x385.jpg",colours: "background-color: #0E1144"},
         {link: "http://www.itheima.com/images/slidead/HOMEPAGE/20191111094228banner968x385.jpg",colours: "background-color: #173BFF"},
@@ -28,11 +29,8 @@ export default {
 };
 </script>
 <style scoped>
-/* #app {
-  background: #012553;
-} */
-.el-carousel{
-  /* position:inherit; */
+.el-carousel container{
+  height: 343px;
 }
 img {
   height: inherit;
