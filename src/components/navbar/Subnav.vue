@@ -311,7 +311,7 @@ export default {
   width: 1200px;
   height: 0;
   position: absolute;
-  left: 49.4%;
+  left: 50%;
   margin-left: -600px;
   top: 0;
   z-index: 3;

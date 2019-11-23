@@ -111,7 +111,7 @@ export default {
 }
 
 .header_con {
-    width: 1200px;
+    width: 1215px;
     margin: 0 48px;
     position: relative;
 }
@@ -280,11 +280,11 @@ export default {
 }
 
 .head_nav ul li .all {
-    width: 232px;
+    width: 230px;
     background: #D72502;
     color: #fff;
     text-align: center;
-    margin-left: 0;
+    margin-left: 2px;
     margin-right: 10px;
     border-top-right-radius: 7px;
     border-top-left-radius: 7px;
