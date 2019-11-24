@@ -62,7 +62,7 @@
 
 <script>
 export default {
-  name: "head",
+  name: "Head",
   data() {
     return {};
   }
