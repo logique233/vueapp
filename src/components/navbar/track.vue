@@ -6,7 +6,7 @@
         <li class="li1">
           <a href="http://bbs.itheima.com/thread-130723-1-1.html" target="_blank" >
             <img src="@/assets/images/ban_down/banup1.jpg" />
-            <span style="border: 1px solid #00f;">
+            <span >
               教育
               <br />理念
             </span>

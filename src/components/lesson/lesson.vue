@@ -19,39 +19,39 @@
               <br />——人工智能主流语言
             </strong>
             <p class="a_gd">
-              <img src="images/course_logo/python_icon.png" alt="python图标" />
+              <img src="~@/assets/images/course_logo/python_icon.png" alt="python图标" />
             </p>
           </a>
         </div>
         <ul class="icon_ul">
           <li class="a_gd">
             <a href="special/pythonzly/index.html" target="_blank">
-              <img class="a_gd" src="images/kind11.jpg" alt="python介绍" />
+              <img class="a_gd" src="~@/assets/images/kind11.jpg" alt="python介绍" />
               <p class="a_gd">学科介绍</p>
             </a>
           </li>
           <li class="a_gd">
             <a href="special/pythonzly/index.html" target="_blank">
-              <img class="a_gd" src="images/kind22.jpg" alt="python就业前景" />
+              <img class="a_gd" src="~@/assets/images/kind22.jpg" alt="python就业前景" />
               <p class="a_gd">就业前景</p>
             </a>
           </li>
           <li class="a_gd">
             <a href="course/pythontext.html" target="_blank">
-              <img class="a_gd" src="images/kind33.jpg" alt="python课程大纲" />
+              <img class="a_gd" src="~@/assets/images/kind33.jpg" alt="python课程大纲" />
               <p class="a_gd">课程大纲</p>
             </a>
           </li>
           <li class="a_gd">
             <a href="teacher.html#apython" target="_blank">
-              <img class="a_gd" src="images/kind44.jpg" alt="python师资介绍" />
+              <img class="a_gd" src="~@/assets/images/kind44.jpg" alt="python师资介绍" />
               <p class="a_gd">师资介绍</p>
             </a>
           </li>
           <!--小横条-->
           <p class="clear ad_box">
-            <a href="course/pythonhistory.html" target="_blank">
-              <img src="images/newslistPIC/1562306722011_Python.jpg" alt="开启全民学python时代" />
+            <a href="#" target="_blank">
+              <img src="~@/assets/images/newslistPIC/1562306722011_Python.jpg" alt="开启全民学python时代" />
             </a>
           </p>
         </ul>
@@ -814,8 +814,12 @@
 </template>
 <script>
 //TODO
-export default {};
+export default {
+  name: "Lesson",
+};
 </script>
 <style scoped>
-   
+@import url("~@/assets/css/reset.css");
+@import url("~@/assets/css/index.css");
+@import url("~@/assets/css/style.css");
 </style>

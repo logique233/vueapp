@@ -1,0 +1,48 @@
+
+.clear{width:100%; height:20px; line-height:0; font-size:0; clear:both;}
+.clear_b{width:100%; height:30px; line-height:0; font-size:0; clear:both;}
+.clear_s{width:100%; height:0; line-height:0; font-size:0; clear:both;}
+.radius{border-radius: 7px;}
+
+
+/* 通用sec样式 */
+.sec{width:1200px; margin:0 0 0 17px; overflow:visible;}
+.sec .hd{width:100%; overflow:hidden; height:45px;}
+.sec .hd_tt{float:left; font-size:22px;}
+.sec .hd_rr{float:left; margin:10px 0 0 50px;}
+.sec .hd_rr ul li{float:left; line-height: 14px; margin: 0 9px; cursor: pointer;}
+.sec .hd_rr ul li.cur {color:#D72502; border-bottom: 2px solid #D72502; padding-bottom: 5px;}
+.sec .hd_rr ul li.cur a{color:#D72502;}
+.sec .hd_rr ul li:hover{color:#D72502;}
+
+/*  资源4栏通用样式 */
+.lay_same .lay_con{width:1200px;}
+.lay_same .lay_con .lay_con_list{width:1220px; display:none; position:relative;}
+.lay_same .lay_con .lay_con_list ul{display:block;}
+.lay_same .lay_con .lay_con_list a.more{right:20px; top:-33px; color:#333; position:absolute; z-index:10;}
+.lay_same .lay_con .lay_con_list a.more:hover{color:#D72502;}
+.lay_same .lay_con ul{width:1220px; display:none;}
+.lay_same .lay_con ul.cur{display:block;}
+.lay_same .lay_con div.cur{display:block;}
+.lay_same .lay_con li{float:left; margin:0 10px 32px 0; border-radius: 7px; overflow: hidden;}
+.lay_same .lay_con li:hover{box-shadow:0 4px 12px #ccc; }
+.lay_same .lay_con .caset{width: 232px; overflow: hidden; position: relative;}
+.lay_same .lay_con .caset p{width: 232px; height: 20px; line-height: 20px; position: absolute; bottom: 0; left: 0; background: #000; filter: alpha(opacity=40); -moz-opacity: 0.4; -khtml-opacity: 0.4; opacity: 0.4; z-index: 1;}
+.lay_same .lay_con .caset b{line-height: 20px; position: absolute; bottom: 0; left: 0; color: #fff; font-size: 12px; text-indent: 10px; z-index: 2; font-weight: normal;}
+.lay_same .lay_con .caset strong{display: block; padding: 0 6px; color: #fff; line-height: 20px; position: absolute; bottom: 0; right: 0; z-index: 3; font-weight: normal; background: #242A38;}
+.lay_same .lay_con .casef{display: block; width: 232px; height: 70px; overflow: hidden; position: relative; background: #fff; border-bottom-left-radius: 7px; border-bottom-right-radius: 7px;}
+.lay_same .lay_con .caset img{display: block; border-top-left-radius: 7px; border-top-right-radius: 7px;}
+.lay_same .lay_con .casef span{display: block; overflow: hidden; line-height: 22px; padding: 10px 10px 0 10px; font-size: 14px; text-overflow: ellipsis; white-space: nowrap;}
+.lay_same .lay_con .casef .course-num{font-size: 12px; color: #818181; padding-top: 6px;}
+.lay_same .lay_con .casef a.a_btn{position: absolute; bottom:13px; right: 10px; width: 60px; border-radius: 3px; height:18px; line-height: 18px; font-size: 12px; border: 1px solid #ed4300; color: #ed4300; text-align: center;}
+
+/* tab栏通用宽大样式 */
+.lay_same .lay_big .caset{height: 140px;}
+.lay_same .lay_big .casef{height: 60px;}
+.lay_same .lay_big .casef a{text-align: center; display: block; line-height: 18px; height: 36px; overflow: hidden; margin-top: 10px; padding:0 10px;}
+
+/* 学习路线图单独样式 */
+.lay_same .lay_con .studybox .caset{width: 291px;}
+.lay_same .lay_con .studybox .caset p{width: 291px;}
+.lay_same .lay_con .studybox .casef{width: 291px;}
+.lay_same .lay_con .studybox li{margin-right:12px;}
