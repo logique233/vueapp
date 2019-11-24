@@ -12,6 +12,7 @@
     <el-container>
       <Lesson></Lesson>
     </el-container>
+    <Affix></Affix>
   </div>
 </template>
 
@@ -19,11 +20,14 @@
 // @ is an alias to /src
 import navbar from "@/components/navbar.vue";
 import Lesson from "@/components/lesson/lesson.vue";
+import Affix from "@/components/affix/affix.vue";
+
 export default {
   name: "home",
   components: {
     navbar,
-    Lesson
+    Lesson,
+    Affix
   }
 };
 </script>
